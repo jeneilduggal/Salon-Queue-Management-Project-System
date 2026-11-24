@@ -19,7 +19,7 @@ export function AuthModal() {
   const { barbers, language } = useQueue();
 
   const [selectedRole, setSelectedRole] = useState('receptionist');
-  const [selectedBarberId, setSelectedBarberId] = useState('alexandre');
+  const [selectedBarberId, setSelectedBarberId] = useState('ravi');
   const [pin, setPin] = useState('');
   const [error, setError] = useState('');
   const [successMsg, setSuccessMsg] = useState('');
