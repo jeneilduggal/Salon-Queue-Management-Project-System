@@ -28,7 +28,7 @@ export function ServiceCatalog({ onNavigate }) {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-8">
       <header className="max-w-2xl mx-auto text-center space-y-3">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-400">L'ÉLITE StyleQ · Service Menu</p>
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-400">StyleNYC · Service Menu</p>
         <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">Services & Treatments</h1>
         <p className="text-sm text-gray-400 leading-relaxed">Explore available salon services, estimated durations and pricing before joining the live queue.</p>
       </header>
