@@ -92,3 +92,21 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #B47752;
 }
+
+
+/* Compatibility palette for screens retained from the previous UI.
+   Keeps every route aligned with the L'ÉLITE ivory / forest / copper theme. */
+.bg-charcoal-950 { background-color: #0A1B16 !important; }
+.bg-charcoal-900 { background-color: #F4F0E7 !important; }
+.bg-charcoal-800 { background-color: #FFFFFF !important; }
+.bg-charcoal-700 { background-color: #EBE5D6 !important; }
+.bg-charcoal-600 { background-color: #DFD7C1 !important; }
+.text-gray-100, .text-gray-200 { color: #242724 !important; }
+.text-gray-300 { color: #454E41 !important; }
+.text-gray-400 { color: #6D7C66 !important; }
+.border-charcoal-800, .border-charcoal-700, .border-charcoal-600 { border-color: rgba(24, 60, 50, 0.12) !important; }
+.bg-gold-500, .bg-gold-600 { background-color: #B47752 !important; }
+.text-gold-400, .text-gold-500, .text-gold-600 { color: #B47752 !important; }
+.border-gold-500, .border-gold-400 { border-color: rgba(180, 119, 82, 0.45) !important; }
+.hover\\:bg-charcoal-700:hover { background-color: #EBE5D6 !important; }
+.hover\\:bg-gold-400:hover { background-color: #9E5F3D !important; }
