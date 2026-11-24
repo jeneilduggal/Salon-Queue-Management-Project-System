@@ -31,8 +31,8 @@ export function Navbar({ currentRoute, onNavigate }) {
             <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-copper-500 text-white flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform"><Scissors className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2]" /></div>
             <div>
               <div className="flex items-center space-x-2">
-                <span className="text-lg sm:text-2xl font-black tracking-tight text-white font-editorial">L'ÉLITE</span>
-                <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-forest-800 text-copper-300 border border-copper-500/30 uppercase tracking-widest">StyleQ</span>
+                <span className="text-lg sm:text-2xl font-black tracking-tight text-white font-editorial">StyleNYC</span>
+                <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-forest-800 text-copper-300 border border-copper-500/30 uppercase tracking-widest">StyleNYC</span>
               </div>
               <div className="flex items-center space-x-1.5 text-xs text-sage-300">
                 <span className={`w-2 h-2 rounded-full ${queueOpen ? 'bg-emerald-400 animate-pulse' : 'bg-amber-400'}`}></span>
