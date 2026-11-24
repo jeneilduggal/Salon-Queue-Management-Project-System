@@ -4,58 +4,91 @@
 
 @layer base {
   body {
-    background-color: #111827;
-    color: #F3F4F6;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #F4F0E7; /* Warm Ivory */
+    color: #242724; /* Charcoal */
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   }
-  .font-gu { font-family: 'Noto Sans Gujarati', 'Inter', sans-serif; }
-  .font-display { font-family: 'Cinzel', Georgia, serif; }
-  .font-editorial { font-family: 'Playfair Display', Georgia, serif; }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
 }
 
+/* Modern Heritage Luxury Styling */
 .heritage-card {
-  background: #242724;
-  border: 1px solid rgba(180, 119, 82, .2);
-  box-shadow: 0 8px 28px rgba(0,0,0,.18);
+  background: #FFFFFF;
+  border: 1px solid rgba(24, 60, 50, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(24, 60, 50, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+.heritage-card:hover {
+  border-color: rgba(180, 119, 82, 0.35);
+  box-shadow: 0 12px 30px -4px rgba(24, 60, 50, 0.1);
+  transform: translateY(-2px);
+}
+
 .heritage-panel {
-  background: #fff;
-  color: #242724;
-  border: 1px solid rgba(24,60,50,.1);
-  box-shadow: 0 8px 30px rgba(0,0,0,.15);
+  background: #FFFFFF;
+  border: 1px solid rgba(24, 60, 50, 0.08);
+  box-shadow: 0 8px 30px -4px rgba(24, 60, 50, 0.06);
 }
+
 .heritage-panel-dark {
-  background: #183c32;
-  color: #f4f0e7;
-  border: 1px solid rgba(180,119,82,.25);
+  background: #183C32;
+  color: #F4F0E7;
+  border: 1px solid rgba(180, 119, 82, 0.25);
+  box-shadow: 0 16px 36px -6px rgba(10, 27, 22, 0.3);
 }
+
+/* Luxury Copper Button */
 .btn-copper {
-  background: #b47752;
-  color: #fff;
-  transition: background .2s ease, transform .2s ease;
+  background-color: #B47752;
+  color: #FFFFFF;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(180, 119, 82, 0.25);
 }
-.btn-copper:hover { background: #9e5f3d; transform: translateY(-1px); }
-.btn-forest { background: #183c32; color: #f4f0e7; transition: background .2s ease; }
-.btn-forest:hover { background: #122d26; }
 
-.ripple-active {
-  position: fixed;
+.btn-copper:hover {
+  background-color: #9E5F3D;
+  box-shadow: 0 6px 20px rgba(180, 119, 82, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-copper:active {
+  transform: translateY(0);
+}
+
+/* Forest Green Button */
+.btn-forest {
+  background-color: #183C32;
+  color: #F4F0E7;
+  transition: all 0.2s ease;
+}
+
+.btn-forest:hover {
+  background-color: #122D26;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+/* Subtle editorial dividers */
+.divider-heritage {
+  background: linear-gradient(90deg, transparent, rgba(180, 119, 82, 0.3), transparent);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F0E7;
+}
+::-webkit-scrollbar-thumb {
+  background: #A6B3A0;
   border-radius: 9999px;
-  pointer-events: none;
-  animation: rippleFade .7s ease-out forwards;
 }
-@keyframes rippleFade {
-  from { opacity: .8; transform: scale(.25); }
-  to { opacity: 0; transform: scale(4); }
+::-webkit-scrollbar-thumb:hover {
+  background: #B47752;
 }
-@keyframes floatSlow { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(18px,-22px,0); } }
-@keyframes floatReverse { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(-18px,20px,0); } }
-@keyframes pulseGold { 0%,100% { opacity: .35; } 50% { opacity: .75; } }
-.animate-float-slow { animation: floatSlow 18s ease-in-out infinite; }
-.animate-float-reverse { animation: floatReverse 22s ease-in-out infinite; }
-.animate-pulse-gold { animation: pulseGold 9s ease-in-out infinite; }
-
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: #111827; }
-::-webkit-scrollbar-thumb { background: #374151; border-radius: 9999px; }
-::-webkit-scrollbar-thumb:hover { background: #D4A017; }
