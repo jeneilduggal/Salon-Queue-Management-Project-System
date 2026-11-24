@@ -8,29 +8,54 @@
     color: #F3F4F6;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
-  
-  /* Gujarati font support */
-  .font-gu {
-    font-family: 'Noto Sans Gujarati', 'Inter', sans-serif;
-  }
-
-  .font-display {
-    font-family: 'Cinzel', serif;
-  }
+  .font-gu { font-family: 'Noto Sans Gujarati', 'Inter', sans-serif; }
+  .font-display { font-family: 'Cinzel', Georgia, serif; }
+  .font-editorial { font-family: 'Playfair Display', Georgia, serif; }
 }
 
-/* Custom scrollbars */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+.heritage-card {
+  background: #242724;
+  border: 1px solid rgba(180, 119, 82, .2);
+  box-shadow: 0 8px 28px rgba(0,0,0,.18);
 }
-::-webkit-scrollbar-track {
-  background: #111827;
+.heritage-panel {
+  background: #fff;
+  color: #242724;
+  border: 1px solid rgba(24,60,50,.1);
+  box-shadow: 0 8px 30px rgba(0,0,0,.15);
 }
-::-webkit-scrollbar-thumb {
-  background: #374151;
+.heritage-panel-dark {
+  background: #183c32;
+  color: #f4f0e7;
+  border: 1px solid rgba(180,119,82,.25);
+}
+.btn-copper {
+  background: #b47752;
+  color: #fff;
+  transition: background .2s ease, transform .2s ease;
+}
+.btn-copper:hover { background: #9e5f3d; transform: translateY(-1px); }
+.btn-forest { background: #183c32; color: #f4f0e7; transition: background .2s ease; }
+.btn-forest:hover { background: #122d26; }
+
+.ripple-active {
+  position: fixed;
   border-radius: 9999px;
+  pointer-events: none;
+  animation: rippleFade .7s ease-out forwards;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #D4A017;
+@keyframes rippleFade {
+  from { opacity: .8; transform: scale(.25); }
+  to { opacity: 0; transform: scale(4); }
 }
+@keyframes floatSlow { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(18px,-22px,0); } }
+@keyframes floatReverse { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(-18px,20px,0); } }
+@keyframes pulseGold { 0%,100% { opacity: .35; } 50% { opacity: .75; } }
+.animate-float-slow { animation: floatSlow 18s ease-in-out infinite; }
+.animate-float-reverse { animation: floatReverse 22s ease-in-out infinite; }
+.animate-pulse-gold { animation: pulseGold 9s ease-in-out infinite; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #111827; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #D4A017; }
